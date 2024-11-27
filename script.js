@@ -78,4 +78,39 @@ const songs = [
     "Keep This Party Going"
 ];
 
-document.getElementById("textbox").value = songs[Math.floor(Math.random() * songs.length)];
+const lyrics = [
+    "She came from Planet Claire",
+    "It wasn't a rock",
+    "Watch out for that piranha",
+    "Reckless drivin', like a sports car",
+    "Get out of the state you're in",
+    "I'll give you fish",
+    "Ew, house-a-tosis",
+    "I'll meet you by the third pyramid",
+    "According to my recipe, you put it on a slow bake",
+    "Stocked it full of jelly jars",
+    "We're in the basement",
+    "Let's meet and have a baby now",
+    "Pick 'em, hull 'em, put on the steam",
+    "Orange popsicles and lemonade",
+    "What's that on your head?",
+    "On the neon side of town",
+    "She knows where the rain goes",
+    "Shake it 'til the butter melts",
+    "Just sit on the porch and swing",
+    "We'll dance in the garden in torn sheets in the rain",
+    "You're what?",
+    "Getting nothing but static",
+    "Our hearts are traveling faster",
+    "Hear the hills scrape the sky",
+    "Last night I dreamed I had burning hands",
+    "Don't shatter the vision",
+    "The vortex spits me out",
+    "Electric luau",
+    "I'm your daytime waitress at the taco tiki hut",
+    "Pink lady with a blue smile",
+    "It's a pink helicopter",
+    "Livin' on the periphery",
+];
+
+document.getElementById("textbox").value = lyrics[Math.floor(Math.random() * lyrics.length)];
