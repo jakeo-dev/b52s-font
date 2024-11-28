@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.{html,js}'],
+  content: ['./*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
-        B52s: ['B52s', 'sans-serif'], 
+        B52s: ['B52s', 'sans-serif'],
       },
     },
   },
   plugins: [],
 }
-
