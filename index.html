@@ -7,6 +7,8 @@
     <title>Unofficial B-52's Font</title>
     <link href="style.css" rel="stylesheet">
 
+    <script src='https://kit.fontawesome.com/57c0dd6a0a.js' crossorigin='anonymous'></script>
+
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
@@ -25,21 +27,33 @@
     <div class="justify-center items-center text-center leading-6 tracking-tight">
         <h1 class="text-4xl md:text-5xl text-[#d4302e] leading-6 tracking-tight">Unofficial B-52's font</h1>
 
-        <div class="flex justify-center gap-x-4 mt-2.5">
+        <div class="flex justify-center mt-3">
             <a class="text-blue-500 hover:text-blue-600 active:text-blue-700 underline hover:decoration-1 hover:decoration-wavy text-xl md:text-2xl leading-6 tracking-tight"
-                href="/unofficial-b52s-Regular.ttf" download="unofficial-b52s-Regular.ttf">Download font (.ttf)</a>
+                href="/unofficial-b52s-Regular.ttf" download="unofficial-b52s-Regular.ttf">Download font (.ttf)</a><!-- 
             <a class="text-blue-500 hover:text-blue-600 active:text-blue-700 underline hover:decoration-1 hover:decoration-wavy text-xl md:text-2xl leading-6 tracking-tight"
-                href="https://github.com/jakeo-dev/b52s-font">View website code on GitHub</a>
+                href="https://github.com/jakeo-dev/b52s-font">View website code on GitHub</a> -->
+        </div>
+
+        <div class="flex justify-center gap-x-3 mt-0.5">
+            <a class='hover:drop-shadow-md active:drop-shadow-none transition flex items-center justify-center'
+                href='https://jakeo.dev' target='_blank'>
+                <img src="https://www.jakeo.dev/logos/bunny-jakeo-wordmark.png" class="w-[3.25rem] md:w-[3.75rem]" />
+            </a>
+            <a class='text-base md:text-lg hover:text-blue-600 underline hover:decoration-wavy hover:decoration-1 transition'
+                href='https://github.com/jakeo-dev/b52s-font' target='_blank'><i
+                    class='text-xs md:text-sm fa-brands fa-github mr-1'></i>GitHub
+            </a>
         </div>
     </div>
 
     <div class="mt-8 md:mt-14">
         <div class="block sm:flex max-w-4xl mx-auto">
-            <label class="text-lg md:text-xl text-gray-500 leading-6 tracking-tight ml-1.5">Start typing below</label>
+            <label class="text-lg md:text-xl text-gray-500 leading-6 tracking-tight ml-1.5" for="textbox">Start typing
+                below</label>
         </div>
         <div class="block sm:flex justify-center max-w-4xl mx-auto">
             <textarea
-                class="text-4xl w-full sm:w-min tracking-tight border-2 rounded-md px-4 py-2 hover:bg-gray-100 focus:bg-gray-200 transition-all"
+                class="text-4xl w-full sm:min-w-full tracking-tight border-2 rounded-md hover:bg-gray-100 focus:bg-gray-200 px-4 py-2 transition"
                 placeholder="Start typing here..." id="textbox" rows="6" autocomplete="off" autocapitalize="off"
                 spellcheck="false"></textarea>
         </div>
