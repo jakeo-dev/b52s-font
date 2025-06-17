@@ -78,6 +78,6 @@ const lyrics = [
 
 document.getElementById("textbox").value = lyrics[Math.floor(Math.random() * lyrics.length)];
 
-if (typeof window !== "undefined" && window.va && window.va.track) {
-  window.va.track("example_flag");
-}
+document.getElementById("downloadBtn").addEventListener("click", () => {
+    if (window.va) window.va.track("download_font_click");
+});
