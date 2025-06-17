@@ -79,5 +79,10 @@ const lyrics = [
 document.getElementById("textbox").value = lyrics[Math.floor(Math.random() * lyrics.length)];
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
-    if (window.va) window.va.track("download_font_click");
+    if (window.va && typeof window.va.track === "function") {
+        window.va("track", "download_font_click");
+        console.log("Success: download button clicked");
+    } else {
+        console.log("Error: Vercel analytics not loaded");
+    }
 });
